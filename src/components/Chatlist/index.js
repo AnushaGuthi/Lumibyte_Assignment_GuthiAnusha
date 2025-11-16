@@ -98,16 +98,16 @@ class Chatlist extends Component {
     return (
       <div className="app-container">
         <div className="comments-container">
-          <h1 className="app-heading">Comments</h1>
+          <h1 className="app-heading">Mock Chats</h1>
           <div className="comments-inputs">
             <form className="form" onSubmit={this.onAddComment}>
               <p className="form-description">
-                Say something about 4.0 Technologies
+                  Mock chat about your mobile
               </p>
               <input
                 type="text"
                 className="name-input"
-                placeholder="Your Name"
+                placeholder="Ask new question..."
                 value={nameInput}
                 onChange={this.onChangeNameInput}
               />
@@ -119,7 +119,7 @@ class Chatlist extends Component {
                 rows="6"
               />
               <button type="submit" className="add-button">
-                Add Comment
+               New  Chat
               </button>
             </form>
             <img
@@ -131,7 +131,7 @@ class Chatlist extends Component {
           <hr className="line" />
           <p className="heading">
             <span className="comments-count">{commentsList.length}</span>
-            Comments
+            Chat Lists
           </p>
           <ul className="comments-list">{this.renderCommentsList()}</ul>
         </div>
